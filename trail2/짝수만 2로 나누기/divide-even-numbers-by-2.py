@@ -8,4 +8,6 @@ def check_element(arr):
             arr[i] //= 2
     return arr
 
-print(*check_element(input_list))
+check_element(input_list)
+for elem in input_list:
+    print(elem, end=' ')
