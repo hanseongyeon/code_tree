@@ -3,27 +3,19 @@ n = int(input())
 # Please write your code here.
 
 def up(num):
-    i = 1
-    if i == num:
-        print(i, end=' ')
+    if num == 0:
         return
     
-    while i < num:
-        i += 1
+    up(num-1)
+    print(num, end=' ')
     
-    up(i-1)
-    print(i, end=' ')
+def down(num):
+    if num == 0:
+        return
+
+    print(num, end=' ')
+    down(num-1)
+
 up(n)
 print()
-def down(num):
-    i = 1
-    if i == num:
-        print(i)
-        return
-    
-    while i < num:
-        i += 1
-    
-    print(i, end=' ')
-    down(i-1)
 down(n)
