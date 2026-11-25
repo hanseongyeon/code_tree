@@ -10,4 +10,4 @@ def recursion_max(index, max_num):
     return recursion_max(index+1, max(arr[index], max_num))
 
 
-print(recursion_max(0, 0))
+print(recursion_max(0, arr[0]))
