@@ -7,7 +7,6 @@ def since_one(num, cnt=0):
 
     if num%2 == 0:
         return since_one(num//2, cnt+1)
-        cnt += 1
     else:
         return since_one(num//3, cnt+1)
 
